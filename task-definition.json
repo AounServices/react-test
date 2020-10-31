@@ -29,7 +29,7 @@
         "memoryReservation": null,
         "volumesFrom": [],
         "stopTimeout": null,
-        "image": "721445765051.dkr.ecr.me-south-1.amazonaws.com/react-repo",
+        "image": "721445765051.dkr.ecr.me-south-1.amazonaws.com/react_repo",
         "startTimeout": null,
         "firelensConfiguration": null,
         "dependsOn": null,
@@ -46,29 +46,23 @@
         "dockerLabels": null,
         "systemControls": null,
         "privileged": null,
-        "name": "ReactContainer"
+        "name": "ReactAppContainer"
       }
     ],
     "placementConstraints": [],
     "memory": "128",
-    "taskRoleArn": "arn:aws:iam::721445765051:role/ecsTaskExecutionRole",
+    "taskRoleArn": null,
     "compatibilities": [
       "EC2"
     ],
-    "taskDefinitionArn": "arn:aws:ecs:me-south-1:721445765051:task-definition/ReactTask:1",
-    "family": "ReactTask",
+    "taskDefinitionArn": "arn:aws:ecs:me-south-1:721445765051:task-definition/DeploymentContainer:1",
+    "family": "DeploymentContainer",
     "requiresAttributes": [
       {
         "targetId": null,
         "targetType": null,
         "value": null,
         "name": "com.amazonaws.ecs.capability.ecr-auth"
-      },
-      {
-        "targetId": null,
-        "targetType": null,
-        "value": null,
-        "name": "com.amazonaws.ecs.capability.task-iam-role"
       }
     ],
     "pidMode": null,
